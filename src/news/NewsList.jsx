@@ -21,6 +21,7 @@ const NewsListHeader = styled.header`
     justify-content: space-between;
     align-items: center;
     background-color: #fff;
+    border-bottom: solid 1px #aaa;
 
     h1 {
         margin: 0;
