@@ -35,7 +35,7 @@ const BtnRegister = styled(Link)`
     font-weight: bold;
 `;
 
-function Login() {
+function Login({ action = () => {} }) {
     const navigate = useNavigate();
     const [id, setId] = useState("");
     const [pw, setPw] = useState("");
@@ -44,9 +44,12 @@ function Login() {
     const onPwChange = useCallback((e) => setPw(e.target.value), []);
     const doLogin = useCallback(() => {
         console.log("Try login with: ", id, pw);
-
-        navigate("/home");
-    }, [id, pw, navigate]);
+        action(id, pw).then((result) => {
+            if (result) {
+                navigate("/home");
+            }
+        });
+    }, [id, pw, navigate, action]);
 
     return (
         <LoginContainer>
