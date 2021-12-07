@@ -6,6 +6,7 @@ import Login from "./user/Login";
 import Register from "./user/Register";
 import dummyUser from "./data/dummy_user.json";
 import NewsWrite from "./news/NewsWrite";
+import NewsDetail from "./news/NewsDetail";
 
 function App() {
     const [user, setUser] = useState(null);
@@ -22,6 +23,7 @@ function App() {
                     <Route path="/" exact element={<NewsList user={user} />} />
                     <Route path="/home" element={<NewsList user={user} />} />
                     <Route path="/write" element={<NewsWrite user={user} />} />
+                    <Route path="/news/:id" element={<NewsDetail />} />
                     <Route
                         path="/login"
                         element={<Login action={loginAction} />}
