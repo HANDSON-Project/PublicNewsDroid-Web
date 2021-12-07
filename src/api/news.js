@@ -1,9 +1,15 @@
-import dummyNews from "../data/dummy_news.json";
+import dummyNewsItem from "../data/dummy_news_item.json";
+import dummyNewsList from "../data/dummy_news_list.json";
 import { wait } from "../utils/wait";
 
 export const getNewsList = async (location) => {
     await wait(500);
-    return dummyNews.filter((news) => news.location === location);
+    return dummyNewsList.filter((news) => news.location === location);
+};
+
+export const getNewsItem = async (id) => {
+    await wait(500);
+    return dummyNewsItem;
 };
 
 export const writeNews = async (title, file, content) => {
