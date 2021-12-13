@@ -5,6 +5,7 @@
         "title": "Seoul ipsum dolor sit amet, consectetur adipiscing elit.",
         "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae augue imperdiet, maximus nisl sit amet, auctor augue. Aliquam eget tellus id massa placerat finibus. Fusce vitae suscipit enim. Nam malesuada sem eu nisl vulputate sodales. Nunc sagittis orci pulvinar finibus iaculis. Duis blandit tortor at imperdiet vulputate. Etiam ligula tortor, mollis vitae gravida sed, lacinia ut felis. Nam neque erat, venenatis non diam eu, egestas bibendum sem. Phasellus vel nunc in tellus imperdiet molestie at faucibus velit. Morbi id augue viverra, suscipit erat id, vehicula ex. Suspendisse sagittis pellentesque neque, a aliquam leo ullamcorper sed.",
         "image": "/dummy_thumb.png",
+        "like": 12,
         "viewNum": 40,
         "location": "seoul"
     },
@@ -14,6 +15,7 @@
         "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae augue imperdiet, maximus nisl sit amet, auctor augue. Aliquam eget tellus id massa placerat finibus. Fusce vitae suscipit enim. Nam malesuada sem eu nisl vulputate sodales. Nunc sagittis orci pulvinar finibus iaculis. Duis blandit tortor at imperdiet vulputate. Etiam ligula tortor, mollis vitae gravida sed, lacinia ut felis. Nam neque erat, venenatis non diam eu, egestas bibendum sem. Phasellus vel nunc in tellus imperdiet molestie at faucibus velit. Morbi id augue viverra, suscipit erat id, vehicula ex. Suspendisse sagittis pellentesque neque, a aliquam leo ullamcorper sed.",
         "image": "/dummy_thumb.png",
+        "like": 12,
         "viewNum": 50,
         "location": "seoul"
     },
@@ -23,6 +25,7 @@
         "title": "Gyeonggido ipsum dolor sit amet, consectetur adipiscing elit.",
         "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae augue imperdiet, maximus nisl sit amet, auctor augue. Aliquam eget tellus id massa placerat finibus. Fusce vitae suscipit enim. Nam malesuada sem eu nisl vulputate sodales. Nunc sagittis orci pulvinar finibus iaculis. Duis blandit tortor at imperdiet vulputate. Etiam ligula tortor, mollis vitae gravida sed, lacinia ut felis. Nam neque erat, venenatis non diam eu, egestas bibendum sem. Phasellus vel nunc in tellus imperdiet molestie at faucibus velit. Morbi id augue viverra, suscipit erat id, vehicula ex. Suspendisse sagittis pellentesque neque, a aliquam leo ullamcorper sed.",
         "image": "/dummy_thumb.png",
+        "like": 12,
         "viewNum": 40,
         "location": "gyeonggido"
     },
@@ -32,6 +35,7 @@
         "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae augue imperdiet, maximus nisl sit amet, auctor augue. Aliquam eget tellus id massa placerat finibus. Fusce vitae suscipit enim. Nam malesuada sem eu nisl vulputate sodales. Nunc sagittis orci pulvinar finibus iaculis. Duis blandit tortor at imperdiet vulputate. Etiam ligula tortor, mollis vitae gravida sed, lacinia ut felis. Nam neque erat, venenatis non diam eu, egestas bibendum sem. Phasellus vel nunc in tellus imperdiet molestie at faucibus velit. Morbi id augue viverra, suscipit erat id, vehicula ex. Suspendisse sagittis pellentesque neque, a aliquam leo ullamcorper sed.",
         "image": "/dummy_thumb.png",
+        "like": 12,
         "viewNum": 40,
         "location": "seoul"
     },
@@ -41,6 +45,7 @@
         "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae augue imperdiet, maximus nisl sit amet, auctor augue. Aliquam eget tellus id massa placerat finibus. Fusce vitae suscipit enim. Nam malesuada sem eu nisl vulputate sodales. Nunc sagittis orci pulvinar finibus iaculis. Duis blandit tortor at imperdiet vulputate. Etiam ligula tortor, mollis vitae gravida sed, lacinia ut felis. Nam neque erat, venenatis non diam eu, egestas bibendum sem. Phasellus vel nunc in tellus imperdiet molestie at faucibus velit. Morbi id augue viverra, suscipit erat id, vehicula ex. Suspendisse sagittis pellentesque neque, a aliquam leo ullamcorper sed.",
         "image": "/dummy_thumb.png",
+        "like": 12,
         "viewNum": 40,
         "location": "seoul"
     },
@@ -50,6 +55,7 @@
         "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae augue imperdiet, maximus nisl sit amet, auctor augue. Aliquam eget tellus id massa placerat finibus. Fusce vitae suscipit enim. Nam malesuada sem eu nisl vulputate sodales. Nunc sagittis orci pulvinar finibus iaculis. Duis blandit tortor at imperdiet vulputate. Etiam ligula tortor, mollis vitae gravida sed, lacinia ut felis. Nam neque erat, venenatis non diam eu, egestas bibendum sem. Phasellus vel nunc in tellus imperdiet molestie at faucibus velit. Morbi id augue viverra, suscipit erat id, vehicula ex. Suspendisse sagittis pellentesque neque, a aliquam leo ullamcorper sed.",
         "image": "/dummy_thumb.png",
+        "like": 12,
         "viewNum": 40,
         "location": "seoul"
     },
@@ -59,6 +65,7 @@
         "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae augue imperdiet, maximus nisl sit amet, auctor augue. Aliquam eget tellus id massa placerat finibus. Fusce vitae suscipit enim. Nam malesuada sem eu nisl vulputate sodales. Nunc sagittis orci pulvinar finibus iaculis. Duis blandit tortor at imperdiet vulputate. Etiam ligula tortor, mollis vitae gravida sed, lacinia ut felis. Nam neque erat, venenatis non diam eu, egestas bibendum sem. Phasellus vel nunc in tellus imperdiet molestie at faucibus velit. Morbi id augue viverra, suscipit erat id, vehicula ex. Suspendisse sagittis pellentesque neque, a aliquam leo ullamcorper sed.",
         "image": "/dummy_thumb.png",
+        "like": 12,
         "viewNum": 40,
         "location": "seoul"
     },
@@ -68,6 +75,7 @@
         "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae augue imperdiet, maximus nisl sit amet, auctor augue. Aliquam eget tellus id massa placerat finibus. Fusce vitae suscipit enim. Nam malesuada sem eu nisl vulputate sodales. Nunc sagittis orci pulvinar finibus iaculis. Duis blandit tortor at imperdiet vulputate. Etiam ligula tortor, mollis vitae gravida sed, lacinia ut felis. Nam neque erat, venenatis non diam eu, egestas bibendum sem. Phasellus vel nunc in tellus imperdiet molestie at faucibus velit. Morbi id augue viverra, suscipit erat id, vehicula ex. Suspendisse sagittis pellentesque neque, a aliquam leo ullamcorper sed.",
         "image": "/dummy_thumb.png",
+        "like": 12,
         "viewNum": 40,
         "location": "seoul"
     },
@@ -77,6 +85,7 @@
         "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae augue imperdiet, maximus nisl sit amet, auctor augue. Aliquam eget tellus id massa placerat finibus. Fusce vitae suscipit enim. Nam malesuada sem eu nisl vulputate sodales. Nunc sagittis orci pulvinar finibus iaculis. Duis blandit tortor at imperdiet vulputate. Etiam ligula tortor, mollis vitae gravida sed, lacinia ut felis. Nam neque erat, venenatis non diam eu, egestas bibendum sem. Phasellus vel nunc in tellus imperdiet molestie at faucibus velit. Morbi id augue viverra, suscipit erat id, vehicula ex. Suspendisse sagittis pellentesque neque, a aliquam leo ullamcorper sed.",
         "image": "/dummy_thumb.png",
+        "like": 12,
         "viewNum": 40,
         "location": "seoul"
     },
@@ -86,6 +95,7 @@
         "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae augue imperdiet, maximus nisl sit amet, auctor augue. Aliquam eget tellus id massa placerat finibus. Fusce vitae suscipit enim. Nam malesuada sem eu nisl vulputate sodales. Nunc sagittis orci pulvinar finibus iaculis. Duis blandit tortor at imperdiet vulputate. Etiam ligula tortor, mollis vitae gravida sed, lacinia ut felis. Nam neque erat, venenatis non diam eu, egestas bibendum sem. Phasellus vel nunc in tellus imperdiet molestie at faucibus velit. Morbi id augue viverra, suscipit erat id, vehicula ex. Suspendisse sagittis pellentesque neque, a aliquam leo ullamcorper sed.",
         "image": "/dummy_thumb.png",
+        "like": 12,
         "viewNum": 40,
         "location": "seoul"
     },
@@ -95,6 +105,7 @@
         "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae augue imperdiet, maximus nisl sit amet, auctor augue. Aliquam eget tellus id massa placerat finibus. Fusce vitae suscipit enim. Nam malesuada sem eu nisl vulputate sodales. Nunc sagittis orci pulvinar finibus iaculis. Duis blandit tortor at imperdiet vulputate. Etiam ligula tortor, mollis vitae gravida sed, lacinia ut felis. Nam neque erat, venenatis non diam eu, egestas bibendum sem. Phasellus vel nunc in tellus imperdiet molestie at faucibus velit. Morbi id augue viverra, suscipit erat id, vehicula ex. Suspendisse sagittis pellentesque neque, a aliquam leo ullamcorper sed.",
         "image": "/dummy_thumb.png",
+        "like": 12,
         "viewNum": 40,
         "location": "seoul"
     },
@@ -104,6 +115,7 @@
         "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae augue imperdiet, maximus nisl sit amet, auctor augue. Aliquam eget tellus id massa placerat finibus. Fusce vitae suscipit enim. Nam malesuada sem eu nisl vulputate sodales. Nunc sagittis orci pulvinar finibus iaculis. Duis blandit tortor at imperdiet vulputate. Etiam ligula tortor, mollis vitae gravida sed, lacinia ut felis. Nam neque erat, venenatis non diam eu, egestas bibendum sem. Phasellus vel nunc in tellus imperdiet molestie at faucibus velit. Morbi id augue viverra, suscipit erat id, vehicula ex. Suspendisse sagittis pellentesque neque, a aliquam leo ullamcorper sed.",
         "image": "/dummy_thumb.png",
+        "like": 12,
         "viewNum": 40,
         "location": "seoul"
     },
@@ -113,6 +125,7 @@
         "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae augue imperdiet, maximus nisl sit amet, auctor augue. Aliquam eget tellus id massa placerat finibus. Fusce vitae suscipit enim. Nam malesuada sem eu nisl vulputate sodales. Nunc sagittis orci pulvinar finibus iaculis. Duis blandit tortor at imperdiet vulputate. Etiam ligula tortor, mollis vitae gravida sed, lacinia ut felis. Nam neque erat, venenatis non diam eu, egestas bibendum sem. Phasellus vel nunc in tellus imperdiet molestie at faucibus velit. Morbi id augue viverra, suscipit erat id, vehicula ex. Suspendisse sagittis pellentesque neque, a aliquam leo ullamcorper sed.",
         "image": "/dummy_thumb.png",
+        "like": 12,
         "viewNum": 40,
         "location": "seoul"
     },
@@ -122,6 +135,7 @@
         "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae augue imperdiet, maximus nisl sit amet, auctor augue. Aliquam eget tellus id massa placerat finibus. Fusce vitae suscipit enim. Nam malesuada sem eu nisl vulputate sodales. Nunc sagittis orci pulvinar finibus iaculis. Duis blandit tortor at imperdiet vulputate. Etiam ligula tortor, mollis vitae gravida sed, lacinia ut felis. Nam neque erat, venenatis non diam eu, egestas bibendum sem. Phasellus vel nunc in tellus imperdiet molestie at faucibus velit. Morbi id augue viverra, suscipit erat id, vehicula ex. Suspendisse sagittis pellentesque neque, a aliquam leo ullamcorper sed.",
         "image": "/dummy_thumb.png",
+        "like": 12,
         "viewNum": 40,
         "location": "seoul"
     },
@@ -131,6 +145,7 @@
         "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae augue imperdiet, maximus nisl sit amet, auctor augue. Aliquam eget tellus id massa placerat finibus. Fusce vitae suscipit enim. Nam malesuada sem eu nisl vulputate sodales. Nunc sagittis orci pulvinar finibus iaculis. Duis blandit tortor at imperdiet vulputate. Etiam ligula tortor, mollis vitae gravida sed, lacinia ut felis. Nam neque erat, venenatis non diam eu, egestas bibendum sem. Phasellus vel nunc in tellus imperdiet molestie at faucibus velit. Morbi id augue viverra, suscipit erat id, vehicula ex. Suspendisse sagittis pellentesque neque, a aliquam leo ullamcorper sed.",
         "image": "/dummy_thumb.png",
+        "like": 12,
         "viewNum": 40,
         "location": "seoul"
     },
@@ -140,6 +155,7 @@
         "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae augue imperdiet, maximus nisl sit amet, auctor augue. Aliquam eget tellus id massa placerat finibus. Fusce vitae suscipit enim. Nam malesuada sem eu nisl vulputate sodales. Nunc sagittis orci pulvinar finibus iaculis. Duis blandit tortor at imperdiet vulputate. Etiam ligula tortor, mollis vitae gravida sed, lacinia ut felis. Nam neque erat, venenatis non diam eu, egestas bibendum sem. Phasellus vel nunc in tellus imperdiet molestie at faucibus velit. Morbi id augue viverra, suscipit erat id, vehicula ex. Suspendisse sagittis pellentesque neque, a aliquam leo ullamcorper sed.",
         "image": "/dummy_thumb.png",
+        "like": 12,
         "viewNum": 40,
         "location": "seoul"
     },
@@ -149,6 +165,7 @@
         "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae augue imperdiet, maximus nisl sit amet, auctor augue. Aliquam eget tellus id massa placerat finibus. Fusce vitae suscipit enim. Nam malesuada sem eu nisl vulputate sodales. Nunc sagittis orci pulvinar finibus iaculis. Duis blandit tortor at imperdiet vulputate. Etiam ligula tortor, mollis vitae gravida sed, lacinia ut felis. Nam neque erat, venenatis non diam eu, egestas bibendum sem. Phasellus vel nunc in tellus imperdiet molestie at faucibus velit. Morbi id augue viverra, suscipit erat id, vehicula ex. Suspendisse sagittis pellentesque neque, a aliquam leo ullamcorper sed.",
         "image": "/dummy_thumb.png",
+        "like": 12,
         "viewNum": 40,
         "location": "seoul"
     },
@@ -158,6 +175,7 @@
         "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae augue imperdiet, maximus nisl sit amet, auctor augue. Aliquam eget tellus id massa placerat finibus. Fusce vitae suscipit enim. Nam malesuada sem eu nisl vulputate sodales. Nunc sagittis orci pulvinar finibus iaculis. Duis blandit tortor at imperdiet vulputate. Etiam ligula tortor, mollis vitae gravida sed, lacinia ut felis. Nam neque erat, venenatis non diam eu, egestas bibendum sem. Phasellus vel nunc in tellus imperdiet molestie at faucibus velit. Morbi id augue viverra, suscipit erat id, vehicula ex. Suspendisse sagittis pellentesque neque, a aliquam leo ullamcorper sed.",
         "image": "/dummy_thumb.png",
+        "like": 12,
         "viewNum": 40,
         "location": "seoul"
     },
@@ -167,6 +185,7 @@
         "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae augue imperdiet, maximus nisl sit amet, auctor augue. Aliquam eget tellus id massa placerat finibus. Fusce vitae suscipit enim. Nam malesuada sem eu nisl vulputate sodales. Nunc sagittis orci pulvinar finibus iaculis. Duis blandit tortor at imperdiet vulputate. Etiam ligula tortor, mollis vitae gravida sed, lacinia ut felis. Nam neque erat, venenatis non diam eu, egestas bibendum sem. Phasellus vel nunc in tellus imperdiet molestie at faucibus velit. Morbi id augue viverra, suscipit erat id, vehicula ex. Suspendisse sagittis pellentesque neque, a aliquam leo ullamcorper sed.",
         "image": "/dummy_thumb.png",
+        "like": 12,
         "viewNum": 40,
         "location": "seoul"
     },
@@ -176,6 +195,7 @@
         "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae augue imperdiet, maximus nisl sit amet, auctor augue. Aliquam eget tellus id massa placerat finibus. Fusce vitae suscipit enim. Nam malesuada sem eu nisl vulputate sodales. Nunc sagittis orci pulvinar finibus iaculis. Duis blandit tortor at imperdiet vulputate. Etiam ligula tortor, mollis vitae gravida sed, lacinia ut felis. Nam neque erat, venenatis non diam eu, egestas bibendum sem. Phasellus vel nunc in tellus imperdiet molestie at faucibus velit. Morbi id augue viverra, suscipit erat id, vehicula ex. Suspendisse sagittis pellentesque neque, a aliquam leo ullamcorper sed.",
         "image": "/dummy_thumb.png",
+        "like": 12,
         "viewNum": 40,
         "location": "seoul"
     },
@@ -185,6 +205,7 @@
         "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae augue imperdiet, maximus nisl sit amet, auctor augue. Aliquam eget tellus id massa placerat finibus. Fusce vitae suscipit enim. Nam malesuada sem eu nisl vulputate sodales. Nunc sagittis orci pulvinar finibus iaculis. Duis blandit tortor at imperdiet vulputate. Etiam ligula tortor, mollis vitae gravida sed, lacinia ut felis. Nam neque erat, venenatis non diam eu, egestas bibendum sem. Phasellus vel nunc in tellus imperdiet molestie at faucibus velit. Morbi id augue viverra, suscipit erat id, vehicula ex. Suspendisse sagittis pellentesque neque, a aliquam leo ullamcorper sed.",
         "image": "/dummy_thumb.png",
+        "like": 12,
         "viewNum": 40,
         "location": "seoul"
     },
@@ -194,6 +215,7 @@
         "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae augue imperdiet, maximus nisl sit amet, auctor augue. Aliquam eget tellus id massa placerat finibus. Fusce vitae suscipit enim. Nam malesuada sem eu nisl vulputate sodales. Nunc sagittis orci pulvinar finibus iaculis. Duis blandit tortor at imperdiet vulputate. Etiam ligula tortor, mollis vitae gravida sed, lacinia ut felis. Nam neque erat, venenatis non diam eu, egestas bibendum sem. Phasellus vel nunc in tellus imperdiet molestie at faucibus velit. Morbi id augue viverra, suscipit erat id, vehicula ex. Suspendisse sagittis pellentesque neque, a aliquam leo ullamcorper sed.",
         "image": "/dummy_thumb.png",
+        "like": 12,
         "viewNum": 40,
         "location": "seoul"
     },
@@ -203,6 +225,7 @@
         "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae augue imperdiet, maximus nisl sit amet, auctor augue. Aliquam eget tellus id massa placerat finibus. Fusce vitae suscipit enim. Nam malesuada sem eu nisl vulputate sodales. Nunc sagittis orci pulvinar finibus iaculis. Duis blandit tortor at imperdiet vulputate. Etiam ligula tortor, mollis vitae gravida sed, lacinia ut felis. Nam neque erat, venenatis non diam eu, egestas bibendum sem. Phasellus vel nunc in tellus imperdiet molestie at faucibus velit. Morbi id augue viverra, suscipit erat id, vehicula ex. Suspendisse sagittis pellentesque neque, a aliquam leo ullamcorper sed.",
         "image": "/dummy_thumb.png",
+        "like": 12,
         "viewNum": 40,
         "location": "seoul"
     },
@@ -212,6 +235,7 @@
         "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae augue imperdiet, maximus nisl sit amet, auctor augue. Aliquam eget tellus id massa placerat finibus. Fusce vitae suscipit enim. Nam malesuada sem eu nisl vulputate sodales. Nunc sagittis orci pulvinar finibus iaculis. Duis blandit tortor at imperdiet vulputate. Etiam ligula tortor, mollis vitae gravida sed, lacinia ut felis. Nam neque erat, venenatis non diam eu, egestas bibendum sem. Phasellus vel nunc in tellus imperdiet molestie at faucibus velit. Morbi id augue viverra, suscipit erat id, vehicula ex. Suspendisse sagittis pellentesque neque, a aliquam leo ullamcorper sed.",
         "image": "/dummy_thumb.png",
+        "like": 12,
         "viewNum": 40,
         "location": "seoul"
     },
@@ -221,6 +245,7 @@
         "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae augue imperdiet, maximus nisl sit amet, auctor augue. Aliquam eget tellus id massa placerat finibus. Fusce vitae suscipit enim. Nam malesuada sem eu nisl vulputate sodales. Nunc sagittis orci pulvinar finibus iaculis. Duis blandit tortor at imperdiet vulputate. Etiam ligula tortor, mollis vitae gravida sed, lacinia ut felis. Nam neque erat, venenatis non diam eu, egestas bibendum sem. Phasellus vel nunc in tellus imperdiet molestie at faucibus velit. Morbi id augue viverra, suscipit erat id, vehicula ex. Suspendisse sagittis pellentesque neque, a aliquam leo ullamcorper sed.",
         "image": "/dummy_thumb.png",
+        "like": 12,
         "viewNum": 40,
         "location": "seoul"
     },
@@ -230,6 +255,7 @@
         "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae augue imperdiet, maximus nisl sit amet, auctor augue. Aliquam eget tellus id massa placerat finibus. Fusce vitae suscipit enim. Nam malesuada sem eu nisl vulputate sodales. Nunc sagittis orci pulvinar finibus iaculis. Duis blandit tortor at imperdiet vulputate. Etiam ligula tortor, mollis vitae gravida sed, lacinia ut felis. Nam neque erat, venenatis non diam eu, egestas bibendum sem. Phasellus vel nunc in tellus imperdiet molestie at faucibus velit. Morbi id augue viverra, suscipit erat id, vehicula ex. Suspendisse sagittis pellentesque neque, a aliquam leo ullamcorper sed.",
         "image": "/dummy_thumb.png",
+        "like": 12,
         "viewNum": 40,
         "location": "seoul"
     }
