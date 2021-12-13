@@ -79,7 +79,7 @@ const NewsComment = styled(NewsLike)`
     border-left: solid 1px #ddd;
 `;
 
-function NewsDetail() {
+function NewsDetail({ user }) {
     const { id } = useParams();
     const [news, setNews] = useState(null);
     const [like, setLike] = useState(false);
@@ -93,10 +93,18 @@ function NewsDetail() {
         setNews({ ...news, like: like ? news.like - 1 : news.like + 1 });
         setLike(!like);
     }, [news, like, id]);
+    const onCommentClicked = useCallback(
+        () => navigate("./comment"),
+        [navigate]
+    );
 
     useEffect(() => {
-        getNewsItem(id).then((n) => setNews(n));
-    }, [id]);
+        if (user === null) {
+            navigate("/login");
+        } else {
+            getNewsItem(id).then((n) => setNews(n));
+        }
+    }, [navigate, id, user]);
 
     return (
         <NewsDetailContainer className={`NewsDetail NewsDetail_${id}`}>
@@ -120,7 +128,9 @@ function NewsDetail() {
                             />
                             {news.like}
                         </NewsLike>
-                        <NewsComment>댓글 보기</NewsComment>
+                        <NewsComment onClick={onCommentClicked}>
+                            댓글 보기
+                        </NewsComment>
                     </NewsNav>
                 </>
             )}
