@@ -1,19 +1,60 @@
 import React from "react";
 import styled from "styled-components";
 
-const CommentItemContainer = styled.div``;
-const CommentAuthor = styled.strong``;
-const CommentContent = styled.p``;
-const CommentDate = styled.p``;
+const CommentItemContainer = styled.div`
+    position: relative;
+    background-color: #fafafa;
+    padding: 16px;
+    border-bottom: solid 1px #eee;
+`;
+const CommentAuthor = styled.strong`
+    font-size: 16px;
+`;
+const CommentContent = styled.p`
+    font-size: 16px;
+    margin: 8px 0;
+`;
+const CommentDate = styled.p`
+    font-size: 12px;
+    margin: 0;
+`;
 
-function CommentItem({ comment, isMe }) {
+const CommentBtnContainer = styled.div`
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    display: flex;
+`;
+const CommentBtn = styled.button`
+    display: block;
+    font-size: 12px;
+    color: #000;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    text-decoration: underline;
+    cursor: pointer;
+
+    &:hover {
+        font-weight: bold;
+    }
+`;
+
+function CommentItem({ comment, isMe, onDelete = () => {} }) {
     return (
         <CommentItemContainer>
             <CommentAuthor>
-                User#{comment.id} {isMe ? "(나)" : ""}
+                User#{comment.id} {isMe ? "(나)" : null}
             </CommentAuthor>
             <CommentContent>{comment.content}</CommentContent>
             <CommentDate>{comment.createAt}</CommentDate>
+            {isMe && (
+                <CommentBtnContainer>
+                    <CommentBtn onClick={() => onDelete(comment.id)}>
+                        삭제
+                    </CommentBtn>
+                </CommentBtnContainer>
+            )}
         </CommentItemContainer>
     );
 }

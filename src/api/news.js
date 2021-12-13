@@ -29,3 +29,15 @@ export const getCommentList = async (newsId) => {
     await wait(300);
     return dummyCommentList;
 };
+
+export const createComment = async (content) => {
+    await wait(300);
+    console.log("Create Comment: ", content);
+    return true;
+};
+
+export const deleteComment = async (commentId) => {
+    await wait(100);
+    console.log("Delete Comment: ", commentId);
+    return true;
+};
