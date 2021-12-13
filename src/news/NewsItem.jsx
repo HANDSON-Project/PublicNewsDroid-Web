@@ -33,8 +33,11 @@ const NewsTitle = styled.h2`
 const NewsDescription = styled.p`
     margin: 4px 0;
 `;
-const NewsCountContainer = styled.div``;
+const NewsCountContainer = styled.div`
+    display: flex;
+`;
 const NewsViewCount = styled.span`
+    margin-right: 12px;
     line-height: 16px;
     &::before {
         content: "";
@@ -44,6 +47,21 @@ const NewsViewCount = styled.span`
         height: 16px;
         margin-right: 4px;
         background-image: url(/icon-eye.png);
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+`;
+const NewsLikeCount = styled.span`
+    line-height: 16px;
+    &::before {
+        content: "";
+        display: block;
+        float: left;
+        width: 16px;
+        height: 16px;
+        margin-right: 4px;
+        background-image: url(/icon-like.png);
+        background-size: 8px 8px;
         background-position: center;
         background-repeat: no-repeat;
     }
@@ -61,6 +79,7 @@ function NewsItem({ news }) {
                     </NewsDescription>
                     <NewsCountContainer>
                         <NewsViewCount>{news.viewNum}</NewsViewCount>
+                        <NewsLikeCount>{news.like}</NewsLikeCount>
                     </NewsCountContainer>
                 </NewsInfoContainer>
             </NewsLink>

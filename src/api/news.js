@@ -17,3 +17,9 @@ export const writeNews = async (title, file, content) => {
     console.log("Write News: ", title, file, content);
     return true;
 };
+
+export const toggleLike = async (news) => {
+    await wait(100);
+    console.log("Like News: ", news.title);
+    return true;
+};

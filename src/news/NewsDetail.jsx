@@ -1,9 +1,12 @@
 import React, { useState, useEffect, useCallback } from "react";
 import { useNavigate, useParams } from "react-router";
-import { getNewsItem } from "../api/news";
+import { getNewsItem, toggleLike } from "../api/news";
 import styled from "styled-components";
 
-const NewsDetailContainer = styled.div``;
+const NewsDetailContainer = styled.div`
+    position: relative;
+    min-height: 100%;
+`;
 const NewsDetailHeader = styled.header`
     position: sticky;
     top: 0;
@@ -46,11 +49,50 @@ const NewsContent = styled.form`
     }
 `;
 
+const NewsNav = styled.nav`
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    border-top: solid 1px #333;
+`;
+
+const NewsLike = styled.button`
+    cursor: pointer;
+    flex: 1;
+    font-size: 14px;
+    background-color: transparent;
+    border: none;
+    padding: 16px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+    img {
+        width: 16px;
+        margin-right: 4px;
+    }
+`;
+
+const NewsComment = styled(NewsLike)`
+    font-weight: bold;
+    border-left: solid 1px #ddd;
+`;
+
 function NewsDetail() {
     const { id } = useParams();
     const [news, setNews] = useState(null);
+    const [like, setLike] = useState(false);
+
     const navigate = useNavigate();
     const onBackClicked = useCallback(() => navigate("/home"), [navigate]);
+    const onLikeClicked = useCallback(() => {
+        toggleLike(news).then(
+            (result) => !result && getNewsItem(id).then((n) => setNews(n))
+        );
+        setNews({ ...news, like: like ? news.like - 1 : news.like + 1 });
+        setLike(!like);
+    }, [news, like, id]);
 
     useEffect(() => {
         getNewsItem(id).then((n) => setNews(n));
@@ -61,14 +103,26 @@ function NewsDetail() {
             <NewsDetailHeader>
                 <img src="/icon-back.png" alt="Back" onClick={onBackClicked} />
                 <h1>뉴스 보기</h1>
-                <div class="right"></div>
+                <div className="right"></div>
             </NewsDetailHeader>
             {news && (
-                <NewsContent>
-                    <h2>{news.title}</h2>
-                    <img src={news.image} alt={news.title} />
-                    <p>{news.content}</p>
-                </NewsContent>
+                <>
+                    <NewsContent>
+                        <h2>{news.title}</h2>
+                        <img src={news.image} alt={news.title} />
+                        <p>{news.content}</p>
+                    </NewsContent>
+                    <NewsNav>
+                        <NewsLike onClick={onLikeClicked}>
+                            <img
+                                src={`/icon-like${like ? "" : "-empty"}.png`}
+                                alt="Like"
+                            />
+                            {news.like}
+                        </NewsLike>
+                        <NewsComment>댓글 보기</NewsComment>
+                    </NewsNav>
+                </>
             )}
         </NewsDetailContainer>
     );
