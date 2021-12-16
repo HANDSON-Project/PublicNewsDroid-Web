@@ -4,6 +4,7 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 import BtnPrimary from "../common/BtnPrimary";
 import locationList from "../data/location.json";
+import { register } from "../api/user";
 
 const RegisterContainer = styled.div`
     display: flex;
@@ -14,7 +15,7 @@ const RegisterContainer = styled.div`
     padding: 48px;
 
     .Input__pw,
-    .Input__email {
+    .Input__nickname {
         margin-top: 20px;
     }
 `;
@@ -45,28 +46,35 @@ const BtnLogin = styled(Link)`
 `;
 
 function Register() {
-    const [id, setId] = useState("");
-    const [pw, setPw] = useState("");
     const [email, setEmail] = useState("");
+    const [pw, setPw] = useState("");
+    const [nickname, setNickname] = useState("");
     const [location, setLocation] = useState("");
 
-    const onIdChange = useCallback((e) => setId(e.target.value), []);
-    const onPwChange = useCallback((e) => setPw(e.target.value), []);
     const onEmailChange = useCallback((e) => setEmail(e.target.value), []);
+    const onPwChange = useCallback((e) => setPw(e.target.value), []);
+    const onNicknameChange = useCallback(
+        (e) => setNickname(e.target.value),
+        []
+    );
     const onLocationChange = useCallback(
         (e) => setLocation(e.target.value),
         []
     );
 
+    const onRegister = useCallback(() => {
+        register(email, pw, nickname, location);
+    }, [nickname, pw, email, location]);
+
     return (
         <RegisterContainer>
             <Title>회원가입</Title>
             <Input
-                type="text"
-                name="id"
-                value={id}
-                placeholder="아이디"
-                onChange={onIdChange}
+                type="email"
+                name="email"
+                value={email}
+                placeholder="이메일"
+                onChange={onEmailChange}
             />
             <Input
                 type="password"
@@ -76,11 +84,11 @@ function Register() {
                 onChange={onPwChange}
             />
             <Input
-                type="email"
-                name="email"
-                value={email}
-                placeholder="이메일"
-                onChange={onEmailChange}
+                type="text"
+                name="nickname"
+                value={nickname}
+                placeholder="별명"
+                onChange={onNicknameChange}
             />
             <Select
                 name="location"
@@ -92,9 +100,7 @@ function Register() {
                     <option value={loc.value}>{loc.name}</option>
                 ))}
             </Select>
-            <BtnRegister onClick={(e) => console.log("회원가입!")}>
-                회원가입
-            </BtnRegister>
+            <BtnRegister onClick={onRegister}>회원가입</BtnRegister>
             <BtnLogin to="/login">로그인</BtnLogin>
         </RegisterContainer>
     );
