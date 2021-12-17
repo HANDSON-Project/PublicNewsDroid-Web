@@ -43,11 +43,10 @@ function Login({ action = () => {} }) {
     const onIdChange = useCallback((e) => setId(e.target.value), []);
     const onPwChange = useCallback((e) => setPw(e.target.value), []);
     const doLogin = useCallback(() => {
-        console.log("Try login with: ", id, pw);
         action(id, pw).then((result) => {
-            if (result) {
-                navigate("/home");
-            }
+            if (!result) return;
+
+            navigate("/home");
         });
     }, [id, pw, navigate, action]);
 

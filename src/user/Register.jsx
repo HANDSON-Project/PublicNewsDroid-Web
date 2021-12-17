@@ -1,10 +1,9 @@
 import React, { useCallback, useState } from "react";
 import Input from "../common/Input";
 import styled from "styled-components";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import BtnPrimary from "../common/BtnPrimary";
 import locationList from "../data/location.json";
-import { register } from "../api/user";
 
 const RegisterContainer = styled.div`
     display: flex;
@@ -45,7 +44,8 @@ const BtnLogin = styled(Link)`
     font-weight: bold;
 `;
 
-function Register() {
+function Register({ action }) {
+    const navigate = useNavigate();
     const [email, setEmail] = useState("");
     const [pw, setPw] = useState("");
     const [nickname, setNickname] = useState("");
@@ -63,8 +63,12 @@ function Register() {
     );
 
     const onRegister = useCallback(() => {
-        register(email, pw, nickname, location);
-    }, [nickname, pw, email, location]);
+        action(email, pw, nickname, location).then((result) => {
+            if (!result) return;
+
+            navigate("/home");
+        });
+    }, [navigate, action, email, pw, nickname, location]);
 
     return (
         <RegisterContainer>

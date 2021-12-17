@@ -121,7 +121,7 @@ function CommentList({ user }) {
                 {commentList.map((comment) => (
                     <CommentItem
                         comment={comment}
-                        isMe={user && user.id === comment.userId}
+                        isMe={user && user.userIdx === comment.userId}
                         onDelete={onCommentItemDelete}
                     />
                 ))}
