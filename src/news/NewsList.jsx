@@ -69,7 +69,7 @@ function NewsList({ user }) {
             </NewsListHeader>
             <StyledUl>
                 {newsList.map((news) => (
-                    <NewsItem key={news.id} news={news} />
+                    <NewsItem key={news.newsIdx} news={news} />
                 ))}
             </StyledUl>
         </NewsListContainer>

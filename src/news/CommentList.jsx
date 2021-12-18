@@ -1,7 +1,7 @@
 import React, { useCallback, useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import styled from "styled-components";
-import { deleteComment, getCommentList } from "../api/news";
+import { createComment, deleteComment, getCommentList } from "../api/news";
 import CommentItem from "./CommentItem";
 
 const CommentListContainer = styled.div`
@@ -73,7 +73,7 @@ const CommentWriteBtn = styled.button`
     height: 136px;
 `;
 
-function CommentList({ user }) {
+function CommentList({ jwt, user }) {
     const { id } = useParams();
     const navigate = useNavigate();
     const [commentList, setCommentList] = useState([]);
@@ -84,9 +84,9 @@ function CommentList({ user }) {
     );
 
     const onCommentItemDelete = useCallback(
-        (commentId) => {
+        (commentIdx) => {
             if (window.confirm("정말 삭제하시겠습니까?")) {
-                deleteComment(commentId).then(
+                deleteComment(jwt, user.userIdx, commentIdx).then(
                     (result) =>
                         result &&
                         getCommentList(id).then((comments) =>
@@ -95,12 +95,17 @@ function CommentList({ user }) {
                 );
             }
         },
-        [id]
+        [jwt, user, id]
     );
 
     const onCommentWrite = useCallback(() => {
-        console.log(newComment);
-    }, [newComment]);
+        createComment(jwt, user.userIdx, id, newComment).then((result) => {
+            if (result) {
+                getCommentList(id).then((comments) => setCommentList(comments));
+                setNewComment("");
+            }
+        });
+    }, [jwt, user, id, newComment]);
 
     useEffect(() => {
         if (user === null) {
@@ -121,7 +126,7 @@ function CommentList({ user }) {
                 {commentList.map((comment) => (
                     <CommentItem
                         comment={comment}
-                        isMe={user && user.userIdx === comment.userId}
+                        isMe={user && user.userIdx === comment.userIdx}
                         onDelete={onCommentItemDelete}
                     />
                 ))}

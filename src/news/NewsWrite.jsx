@@ -43,7 +43,7 @@ const NewsWriteForm = styled.form`
     }
 `;
 
-function NewsWrite({ user }) {
+function NewsWrite({ jwt, user }) {
     const navigate = useNavigate();
     const [title, setTitle] = useState("");
     const [content, setContent] = useState("");
@@ -55,10 +55,10 @@ function NewsWrite({ user }) {
 
     const onBackClicked = useCallback(() => navigate("/home"), [navigate]);
     const onSave = useCallback(() => {
-        writeNews(title, file, content).then(
+        writeNews(jwt, user.userIdx, title, file, content, user.location).then(
             (result) => result && navigate("/home")
         );
-    }, [navigate, title, file, content]);
+    }, [jwt, user, navigate, title, file, content]);
 
     useEffect(() => {
         if (user === null) {

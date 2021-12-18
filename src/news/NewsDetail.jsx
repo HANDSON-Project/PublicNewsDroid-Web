@@ -79,7 +79,7 @@ const NewsComment = styled(NewsLike)`
     border-left: solid 1px #ddd;
 `;
 
-function NewsDetail({ user }) {
+function NewsDetail({ jwt, user }) {
     const { id } = useParams();
     const [news, setNews] = useState(null);
     const [like, setLike] = useState(false);
@@ -87,12 +87,13 @@ function NewsDetail({ user }) {
     const navigate = useNavigate();
     const onBackClicked = useCallback(() => navigate("/home"), [navigate]);
     const onLikeClicked = useCallback(() => {
-        toggleLike(news).then(
-            (result) => !result && getNewsItem(id).then((n) => setNews(n))
+        toggleLike(jwt, user.userIdx, news.newsIdx, like).then((result) =>
+            getNewsItem(id).then((n) => {
+                setNews(n);
+            })
         );
-        setNews({ ...news, like: like ? news.like - 1 : news.like + 1 });
         setLike(!like);
-    }, [news, like, id]);
+    }, [jwt, user, news, like, id]);
     const onCommentClicked = useCallback(
         () => navigate("./comment"),
         [navigate]
@@ -118,7 +119,7 @@ function NewsDetail({ user }) {
                     <NewsContent>
                         <h2>{news.title}</h2>
                         <img src={news.image} alt={news.title} />
-                        <p>{news.content}</p>
+                        <p>{news.context}</p>
                     </NewsContent>
                     <NewsNav>
                         <NewsLike onClick={onLikeClicked}>
@@ -126,7 +127,7 @@ function NewsDetail({ user }) {
                                 src={`/icon-like${like ? "" : "-empty"}.png`}
                                 alt="Like"
                             />
-                            {news.like}
+                            {news.likeNum}
                         </NewsLike>
                         <NewsComment onClick={onCommentClicked}>
                             댓글 보기

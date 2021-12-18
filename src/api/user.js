@@ -38,8 +38,6 @@ export const login = async (email, password) => {
         return null;
     }
 
-    console.log(response);
-
     return response.data.result;
 };
 

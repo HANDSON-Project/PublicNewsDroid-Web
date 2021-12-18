@@ -21,9 +21,11 @@ const NewsThumbnail = styled.img`
     object-fit: cover;
     margin-right: 12px;
 `;
-const NewsInfoContainer = styled.div``;
+const NewsInfoContainer = styled.div`
+    min-width: 50%;
+`;
 const NewsTitle = styled.h2`
-    max-width: 90%;
+    width: 100%;
     margin: 0;
     white-space: nowrap;
     font-size: 14px;
@@ -70,16 +72,16 @@ const NewsLikeCount = styled.span`
 function NewsItem({ news }) {
     return (
         <NewsItemContainer>
-            <NewsLink to={`/news/${news.id}`}>
+            <NewsLink to={`/news/${news.newsIdx}`}>
                 <NewsThumbnail src={news.image} alt={news.title} />
                 <NewsInfoContainer>
                     <NewsTitle>{news.title}</NewsTitle>
                     <NewsDescription>
-                        {news.content.slice(0, 40)}
+                        {news.context.slice(0, 40)}
                     </NewsDescription>
                     <NewsCountContainer>
                         <NewsViewCount>{news.viewNum}</NewsViewCount>
-                        <NewsLikeCount>{news.like}</NewsLikeCount>
+                        <NewsLikeCount>{news.likeNum}</NewsLikeCount>
                     </NewsCountContainer>
                 </NewsInfoContainer>
             </NewsLink>
