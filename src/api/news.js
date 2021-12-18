@@ -1,4 +1,6 @@
 import axios from "axios";
+import server from "./server.json";
+axios.defaults.baseURL = server.url;
 
 export const getNewsList = async (location) => {
     const options = {
