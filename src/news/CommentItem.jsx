@@ -44,13 +44,13 @@ function CommentItem({ comment, isMe, onDelete = () => {} }) {
     return (
         <CommentItemContainer>
             <CommentAuthor>
-                User#{comment.id} {isMe ? "(나)" : null}
+                {comment.nickname} {isMe ? "(나)" : null}
             </CommentAuthor>
-            <CommentContent>{comment.content}</CommentContent>
-            <CommentDate>{comment.createAt}</CommentDate>
+            <CommentContent>{comment.context}</CommentContent>
+            <CommentDate>{comment.createdAt}</CommentDate>
             {isMe && (
                 <CommentBtnContainer>
-                    <CommentBtn onClick={() => onDelete(comment.id)}>
+                    <CommentBtn onClick={() => onDelete(comment.commentIdx)}>
                         삭제
                     </CommentBtn>
                 </CommentBtnContainer>
